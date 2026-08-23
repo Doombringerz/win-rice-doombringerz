@@ -1,0 +1,64 @@
+# starship-red.toml: Doombringerz red theme (doom dominant, gold accents)
+# Active by default. Switch with: doom-theme gold
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+add_newline = false
+
+[character]
+success_symbol = "[⛧](bold #ff3838)"
+error_symbol   = "[✗](bold #ffd700)"
+
+[username]
+style_user  = "bold #ff3838"
+format      = "[$user]($style)"
+show_always = false  # off by default; shows on SSH or as admin
+
+[hostname]
+style    = "bold #ffd700"
+format   = "[@$hostname]($style) "
+ssh_only = true   # only show on SSH (default)
+
+[directory]
+style             = "bold #ff3838"
+truncation_length = 3
+truncate_to_repo  = false
+
+[git_branch]
+symbol = " "
+style  = "bold #ffd700"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style    = "bold #ffd700"
+format   = "[$all_status$ahead_behind]($style) "
+modified = "✱"
+staged   = "+"
+deleted  = "✘"
+ahead    = "⇡${count}"
+behind   = "⇣${count}"
+
+[cmd_duration]
+min_time = 2000
+style    = "italic #888888"
+format   = "[took $duration]($style) "
+
+[python]
+disabled = true
+
+[nodejs]
+symbol = " "
+style  = "bold #ffd700"
+
+[rust]
+symbol = " "
+style  = "bold #ff3838"

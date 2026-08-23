@@ -1,0 +1,50 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "_comment": "Doombringerz Windows Terminal config. REFERENCE ONLY. Merge into your existing settings.json. Do not overwrite.",
+    "copyOnSelect": true,
+    "copyFormatting": "none",
+    "theme": "dark",
+    "profiles": {
+        "defaults": {
+            "font": {
+                "face": "JetBrainsMono Nerd Font",
+                "size": 11,
+                "weight": "normal"
+            },
+            "colorScheme": "Doombringerz Dark",
+            "useAcrylic": true,
+            "opacity": 90,
+            "padding": "12, 12, 12, 12",
+            "historySize": 10000,
+            "scrollbarState": "hidden",
+            "cursorShape": "filledBox",
+            "antialiasingMode": "cleartype"
+        }
+    },
+    "schemes": [
+        {
+            "name": "Doombringerz Dark",
+            "background": "#0a0a0a",
+            "foreground": "#e0e0e0",
+            "black": "#000000",
+            "red": "#ff5555",
+            "green": "#00ff88",
+            "yellow": "#ffaa00",
+            "blue": "#6688ff",
+            "purple": "#cc88ff",
+            "cyan": "#00ddff",
+            "white": "#e0e0e0",
+            "brightBlack": "#666666",
+            "brightRed": "#ff7777",
+            "brightGreen": "#44ffaa",
+            "brightYellow": "#ffcc44",
+            "brightBlue": "#88aaff",
+            "brightPurple": "#dd99ff",
+            "brightCyan": "#44eeff",
+            "brightWhite": "#ffffff",
+            "selectionBackground": "#3a3a3a",
+            "cursorColor": "#00ff88"
+        }
+    ]
+}
